@@ -12,29 +12,29 @@ class PostForm(FlaskForm):
     )
 
     last_name = StringField('Last Name',
-    validators = [
-        DataRequired(),
-        Length(min=2, max=30)
+        validators = [
+            DataRequired(),
+            Length(min=2, max=30)
         ]
     )
 
     title = StringField('Title',
         validators = [
-        DataRequired(),
-        Length(min=2, max=100)
+            DataRequired(),
+            Length(min=2, max=100)
         ]
-)
-content = StringField('Content',
-    validators = [
-        DataRequired(),
-        Length(min=2, max=1000)
-    ]
-)
+    )
+    content = StringField('Content',
+        validators = [
+            DataRequired(),
+            Length(min=2, max=1000)
+        ]
+    )
 submit = SubmitField('Post!')
 
 class RegistrationForm(FlaskForm):
     email = StringField('Email',
-        validators= [
+        validators = [
             DataRequired(),
             Email()
         ]

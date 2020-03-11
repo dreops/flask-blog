@@ -46,24 +46,9 @@
             </div>
         </form>
     </div>
-
+    
 {% endblock %}
    
 
-<!--                    Password and Check Password fields below
-</div>
-{% endblock %}
-            <br>
-            <br>
-            <div class='form_group'>
-                {{ form.submit }}
-            </div>
-        </form>
-    </div>
-{% endblock %}
-    
-    </div>
-
-<h1>{{ title}}</h1>
-
-<h2>Register</h2> -->
+<!--                    Password and Check Password  fields below
+I figured out the issue. It seems that jinja2 statements still get parsed even if they're commented out...
