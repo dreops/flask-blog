@@ -1,7 +1,9 @@
-{% extends "layout.html" %}
-
-{% block body-content %}
-
-<h1>{{ title}}</h1>
-
-<h2>Layout</h2>
+<html>
+    <head>
+        <title>{{ title}}</title>
+    </head>
+    <body>
+        {% block body_content %}
+        {% endblock %}
+    </body>
+</html>
