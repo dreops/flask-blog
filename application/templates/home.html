@@ -3,12 +3,14 @@
 {% block body_content %}
 <p>Welcome to this web app home page!</p>
 {% for post in posts %}
-    <h1>{{ title }}</h1>
+    <h1>BLOB!</h1>
         <div>
-            <h3>Post Title: {{ post.title }}</h3>
-            <p><b> - First Name:</b>{{ post.first_name }}</p>
-            <p><b> - Last Name:</b>{{ post.last_name }}</p>
+            <h3>Post Title:<b>{{ post.title }}</b></h3>
+            Author info: by <span><i>{{ post.author.first_name }} {{ post.author.last_name }}</i></span>
+            <span>on the <i>{{ post.date_posted }}</i></span>
             <p>Post Content: {{ post.content }}</p>
+            <br>
+            
         </div>
 {% endfor %}
 
