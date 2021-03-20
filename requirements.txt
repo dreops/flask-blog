@@ -4,4 +4,4 @@ Flask-Login==0.5.0
 Flask-SQLAlchemy==2.4.1
 Flask-Testing==0.8.0
 Flask-WTF==0.14.2
-Jinja2==2.10.3
+Jinja2==2.11.3
